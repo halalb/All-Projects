@@ -1,0 +1,27 @@
+<!-- topiclist.ejs -->
+
+<!doctype html>
+<html>
+  <head>
+    <title>List of Topics - <%=forumName%></title>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1>List of Topics - <%=forumName%></h1>
+
+    <% if (topics && topics.length > 0) { %>
+        <ul>
+            <% topics.forEach(function(topic) { %>
+                <li>
+                    <strong>Title:</strong> <%= topic.title %>
+                    <strong>Description:</strong> <%= topic.description %> 
+                </li>
+            <% }); %>
+        </ul>
+    <% } else { %>
+        <p>No topics available.</p>
+    <% } %>
+
+    <p><a href="/">Back to Home</a></p>
+  </body>
+</html>

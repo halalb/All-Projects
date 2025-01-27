@@ -1,0 +1,28 @@
+<!-- postlist.ejs -->
+
+<!doctype html>
+<html>
+  <head>
+    <title>List of Posts - <%=forumName%></title>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1>List of Posts - <%=forumName%></h1>
+
+    <% if (posts && posts.length > 0) { %>
+        <ul>
+            <% posts.forEach(function(post) { %>
+                <li>
+                    <strong>User:</strong> <%= post.userId %> <!-- Replace with actual user information -->
+                    <strong>Topic:</strong> <%= post.topicTitle %>
+                    <p><%= post.content %></p>
+                </li>
+            <% }); %>
+        </ul>
+    <% } else { %>
+        <p>No posts available.</p>
+    <% } %>
+
+    <p><a href="/">Back to Home</a></p>
+  </body>
+</html>

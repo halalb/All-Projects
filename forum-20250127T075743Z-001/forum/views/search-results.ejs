@@ -1,0 +1,20 @@
+<!doctype html>
+
+<html>
+        <head>
+                <link rel="stylesheet"  type="text/css" href="main.css" />
+        </head>
+        <body>
+        <h1><%=forumName%> Shop</h1> 
+        <h2>Search Results:</h2> 
+        <ul>
+                <% if (availableBooks && availableBooks.length) { %> 
+                    <% for(let i = 0; i < availableBooks.length; i++) { %> 
+                        <li><%= availableBooks[i].name + ", £"  + availableBooks[i].price  %></li> 
+                    <% } %>
+                <% } else { %>
+                    <li>No books were found</li>
+                <% } %>
+            </ul>
+        </body>
+</html>

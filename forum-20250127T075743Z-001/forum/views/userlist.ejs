@@ -1,0 +1,28 @@
+<!-- userlist.ejs -->
+
+<!doctype html>
+<html>
+  <head>
+    <title>List of Users - <%=forumName%></title>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1>List of Users - <%=forumName%></h1>
+
+    <% if (users && users.length > 0) { %>
+        <ul>
+            <% users.
+            forEach(function(user) { %>
+                <li>
+                    <strong>Name:</strong> <%= user.name %>
+                    <strong>Email:</strong> <%= user.email %> 
+                </li>
+            <% }); %>
+        </ul>
+    <% } else { %>
+        <p>No users available.</p>
+    <% } %>
+
+    <p><a href="/">Back to Home</a></p>
+  </body>
+</html>

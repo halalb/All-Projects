@@ -1,0 +1,29 @@
+<!-- addpost.ejs -->
+
+<!doctype html>
+<html>
+  <head>
+    <title>Add a New Post - <%=forumName%></title>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1>Add a New Post - <%=forumName%></h1>
+    <form method="POST" action="/postadded">
+        <p>User ID: <input type="text" name="userId" value="1" /></p> <!-- Replace with actual user authentication -->
+        
+        <!-- Display a dropdown list of available topics -->
+        <p>Choose a Topic:
+          <select name="topicId">
+            <% topics.forEach(function(topic) { %>
+              <option value="<%= topic.id %>"><%= topic.title %></option>
+            <% }); %>
+          </select>
+        </p>
+
+        <p>Content: <textarea name="content"></textarea></p>
+        <input type="submit" value="Add Post" />
+    </form>
+
+    <p><a href="/">Back to Home</a></p>
+  </body>
+</html>
