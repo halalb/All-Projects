@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <title><%= shopName %></title>
+    <!-- Link to an external CSS file for styling -->
+    <link rel="stylesheet" type="text/css" href="/public/styles.css">
+</head>
+<body>
+    <h1>Register for <%= shopName %></h1>
+
+    <!-- Navigation bar with links -->
+    <nav>
+        <ul class="navBar">
+            <!-- List items with links -->
+            <li class="navItem"><a href="/">Homepage</a></li>
+            <li class="navItem"><a href="/register">Register</a></li>
+            <li class="navItem"><a href="/about">About</a></li>
+            <li class="navItem"><a href="/search">Search</a></li>
+        </ul>
+    </nav>
+
+    <!-- Registration form -->
+    <form method="POST" action="/registered">
+        <input id="first" type="text" name="first" placeholder="First name" />
+        <input id="last" type="text" name="last" placeholder="Last name" />
+        <input id="email" type="email" name="email" placeholder="Email" />
+        <input type="submit" value="OK" />
+    </form>
+</body>
+</html>

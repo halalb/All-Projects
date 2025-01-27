@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    <title><%= shopName %></title>
+    <!-- Link to an external CSS file for styling -->
+    <link rel="stylesheet" type="text/css" href="/public/styles.css">
+</head>
+<body>
+    <h1>Welcome to <%= shopName %></h1>
+
+    <!-- Navigation bar with links -->
+    <nav>
+        <ul class="navBar">
+            <!-- List items with links -->
+            <li class="navItem"><a href="/">Homepage</a></li>
+            <li class="navItem"><a href="/register">Register</a></li>
+            <li class="navItem"><a href="/about">About</a></li>
+            <li class="navItem"><a href="/search">Search</a></li>
+        </ul>
+    </nav>
+
+    <h2>Here are some things that we sell:</h2>
+
+    <!-- Unordered list of items -->
+    <ul class="items">
+        <% for(let i = 0; i < productCategories.length; i++) { %>
+        <li><%= productCategories[i] %></li>
+        <% } %>
+    </ul>
+</body>
+</html>
