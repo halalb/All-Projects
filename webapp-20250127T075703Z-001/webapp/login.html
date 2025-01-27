@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-page">
+        <div class="form">
+          <form class="register-form" id="registerForm">
+            <h2 class="form-title">Create Account</h2>
+            <input type="text" placeholder="name"/>
+            <input type="password" placeholder="password"/>
+            <input type="text" placeholder="email address"/>
+            <button>create</button>
+            <p class="message">Already registered? <a href="#" onclick="toggleForms()">Sign In</a></p>
+          </form>
+          <form class="login-form" id="loginForm">
+            <h2 class="form-title">Welcome Back!</h2>
+            <input type="text" placeholder="username"/>
+            <input type="password" placeholder="password"/>
+            <button>login</button>
+            <p class="message">Not registered? <a href="#" onclick="toggleForms()">Create an account</a></p>
+          </form>
+        </div>
+    </div>
+
+    <script>
+        function toggleForms() {
+            var registerForm = document.getElementById("registerForm");
+            var loginForm = document.getElementById("loginForm");
+
+            // Toggle the display property
+            if (registerForm.style.display === "none" || registerForm.style.display === "") {
+                registerForm.style.display = "block";
+                loginForm.style.display = "none";
+            } else {
+                registerForm.style.display = "none";
+                loginForm.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

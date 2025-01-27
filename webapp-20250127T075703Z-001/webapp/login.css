@@ -1,0 +1,181 @@
+.login-page {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+  }
+/* Form box (must match the background) */
+  .form {
+    position: relative;
+    z-index: 1;
+    background: LightSalmon;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+  }
+
+.form-title {
+    display: none; /* Hide form titles by default */
+    color: #333; /* Default font color */
+    font-size: 18px; /* Default font size */
+}
+
+.login-form .form-title {
+    display: block; /* Display title for login form */
+    color: #5054AF; /* Customize font color for login form */
+    font-size: 20px; /* Customize font size for login form */
+}
+
+.register-form .form-title {
+    display: block; /* Display title for register form */
+    color: #5054AF; /* Customize font color for register form */
+    font-size: 20px; /* Customize font size for register form */
+}
+
+/* Form input Boxes */
+  .form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: white;
+    width: 100%;
+    border: 2.4px solid #5054AF; /* Border coloUr */
+    border-radius: 25px; /* Rounded corners */
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Customize the border color on focus */
+.form input:focus {
+    border-color: LightSalmon; /* Change the border color on focus */
+}
+
+.form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: whitesmoke;
+    width: 50%;
+    border: 3.3px solid #5054AF;
+    border-radius: 25px; /* Border radius for rounded corners */
+    padding: 10px;
+    color: darkblue;
+    font-size: 15px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Customize the border color on hover, active, and focus */
+.form input:focus {
+    border-color: RoyalBlue;
+}
+
+/* Bold class for login and create buttons */
+.bold-button {
+    font-weight: bold;
+}
+
+/* Apply the bold class to login and create buttons */
+.form .login-form button,
+.form .register-form button {
+    font-weight: bold;
+}
+
+/* Customize the border color on hover, active, and focus for bold buttons */
+.form .login-form button:hover,
+.form .login-form button:active,
+.form .login-form button:focus,
+.form .register-form button:hover,
+.form .register-form button:active,
+.form .register-form button:focus {
+    border-color: RoyalBlue;
+    font-weight: bold;
+}
+
+/* Customize the border color on focus */
+.form input:focus {
+    border-color: MediumBlue;
+}
+
+/* Bold class for login and create buttons */
+.bold-button {
+    font-weight: bold;
+}
+
+/* Apply the bold class to login and create buttons */
+.form .login-form button,
+.form .register-form button {
+    font-weight: bold;
+}
+
+/* Change background color on hover for bold buttons */
+.form .login-form button:hover,
+.form .register-form button:hover {
+    background: #B6B8F1; /* Change the background color on hover */
+    border-color: MediumBlue;
+}
+
+.form .message {
+  margin: 15px 0 0;
+  color: #939393;
+  font-size: 15px;
+}
+
+.form .message a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hide registration form */
+.form .register-form {
+  display: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.container .info span .fa {
+  color: #EF3B3A;
+}
+
+body {
+  background: #FA7550;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}

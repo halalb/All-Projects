@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the HTML document -->
+    <title>Calendar UI</title>
+    <!-- Link to the external stylesheet for styling -->
+    <link rel="stylesheet" type="text/css" href="homePageStyles.css">
+</head>
+<body>
+    <!-- Welcome box at the top of the page -->
+    <div class="welcome-box">
+        <!-- Welcome text for the user -->
+        <p class="welcome-text">Welcome User</p>
+    </div>
+    <!-- Calendar container holding the month header and table -->
+    <div class="calendar-container">
+        <!-- Month header containing navigation buttons and current month display -->
+        <div class="month-header">
+            <!-- Button to navigate to the previous month -->
+            <button id="prev-month">❮</button>
+            <!-- Display of the current month and year -->
+            <h1 id="current-month">January 2024</h1>
+            <!-- Button to navigate to the next month -->
+            <button id="next-month">❯</button>
+        </div>
+        <!-- Table for displaying the calendar -->
+        <table class="calendar-table">
+            <thead>
+                <!-- Header row for day abbreviations (Sun, Mon, Tue, etc.) -->
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <!-- Body of the table where the calendar content will be dynamically generated -->
+            <tbody id="calendar-body">
+                <!-- Calendar content goes here -->
+            </tbody>
+        </table>
+    </div>
+    <!-- Script tag to include the JavaScript file -->
+    <script src="homePageScript.js"></script>
+</body>
+</html>

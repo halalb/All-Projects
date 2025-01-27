@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="settingsPage.css">
+  <title>Settings Page</title>
+</head>
+<body>
+  <header>
+    <button id="backButton">&larr;</button>
+    <h1>Settings</h1>
+  </header>
+  <main>
+    <div class="row" onclick="buttonClick('My Account')">My Account</div>
+    <div class="row" onclick="buttonClick('Calendar')">Calendar</div>
+    <div class="row" onclick="buttonClick('Auto-Schedule')">Auto-Schedule</div>
+    <div class="row" onclick="buttonClick('Customize')">Customize</div>
+    <div class="row" onclick="buttonClick('Sync')">Sync</div>
+  </main>
+  <script src="settingsPage.js"></script>
+</body>
+</html>

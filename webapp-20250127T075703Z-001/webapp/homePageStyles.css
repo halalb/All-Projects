@@ -1,0 +1,70 @@
+/* Resetting default styles and setting the base font family */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+/* Shared styles for the welcome box and calendar container */
+.welcome-box, .calendar-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Styles specific to the welcome box */
+.welcome-box {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Styles for welcome text and current month display */
+.welcome-text, #current-month {
+    font-size: 20px;
+    color: black;
+}
+/* Styles for the month header containing navigation buttons and current month display */
+.month-header {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Styles for the calendar table */
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+/* Styles for table cells (both header cells and regular cells) */
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+/* Hover effect for table cells */
+td:hover {
+    background-color: #f2f2f2;
+}
+/* Styles for today's date cell */
+.today {
+    background-color: #2ecc71;
+    color: white;
+}
+/* Styles for buttons used for navigation */
+button {
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* Hover effect for buttons */
+button:hover {
+    text-decoration: underline;
+}

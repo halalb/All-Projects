@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TaskPagestyle.css">
+    <title>Task Manager</title>
+</head>
+<body>
+    <!-- Main container for the entire task manager -->
+     <div class="task-manager-container">
+       <!-- Header section containing live date and small calendar UI -->
+       <div class="header">
+         <div class="live-date"> <!-- Live date display -->
+           <!-- Actual live date content will be dynamically updated here -->
+           <!-- JS Code needed here for real dynamic date display, this is just placeholder. thx Joseph ;P -->
+           <h2><span id="current-date">Saturday 20-01-2024</span></h2>
+         </div>
+         <div class="small-calendar"> <!-- Small calendar UI -->
+           <!-- Current month calendar content will be dynamically updated here -->
+         </div>
+       </div>
+   
+       <!-- Main content section for task manager features -->
+       <div class="task-manager-content">
+         <!-- Task buttons for various actions -->
+         <div class="task-buttons">
+           <button>Create New List</button>
+           <button>Add Event</button>
+           <button>Edit Event</button>
+           <button>Delete Event</button>
+           <button>Auto Schedule Event</button>
+           <button>Add Reminder</button>
+           <button>Import List</button>
+         </div>
+   
+         <!-- Task display section -->
+         <div class="task-display-section">
+           <!-- Task display buttons for different views -->
+           <div class="task-display-buttons">
+             <button id="in-progress-btn" class="selected">Tasks in Progress</button>
+             <button id="upcoming-btn">Upcoming Tasks</button>
+             <button id="completed-btn">Completed Tasks</button>
+             <button id="all-events-btn">All Events</button>
+           </div>
+   
+           <!-- Header displaying the current selected task display button -->
+           <div class="selected-header">
+             <h3><span id="selected-display-title">Tasks in Progress</span></h3>
+           </div>
+   
+           <div class="selected-display in-progress-tasks">
+             <!-- Content related to the selected display goes here -->
+             <div class="selected-content">
+               <!-- Additional details or controls related to the selected display can be added here -->
+             </div>
+           </div>
+   
+           <div class="task-displays">
+             <!-- Display three sample tasks under 'Tasks in Progress' -->
+             <!-- Task Sample #1 -->
+             <div class="task-card in-progress-tasks">
+               <div class="task-box">
+                 <span class="task-title">Task 1</span>
+                 <span class="task-date">Jan 25, 2024</span>
+                 <span class="task-time">10:00 AM</span> <!-- Add this line for task due time -->
+               </div>
+             </div>
+             <!-- Task Sample #2 -->
+             <div class="task-card in-progress-tasks">
+               <div class="task-box">
+                 <span class="task-title">Task 2</span>
+                 <span class="task-date">Feb 3, 2024</span>
+                 <span class="task-time">2:30 PM</span> <!-- Add this line for task due time -->
+               </div>
+             </div>
+             <!-- Task Sample #3 -->
+             <div class="task-card in-progress-tasks">
+               <div class="task-box">
+                 <span class="task-title">Task 3</span>
+                 <span class="task-date">Mar 10, 2024</span>
+                 <span class="task-time">5:00 PM</span> <!-- Add this line for task due time -->
+               </div>
+             </div>
+             <!-- Create similar task cards for other display options -->
+           </div>
+           <!-- End of task-displays -->
+         </div>
+         <!-- End of task-display-section -->
+       </div>
+       <!-- End of task-manager-content -->
+   
+       </div>
+       <!-- End of task-manager-container -->
+   
+     </body>
+   </html>

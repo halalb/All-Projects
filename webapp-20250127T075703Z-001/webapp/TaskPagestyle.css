@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styles for the main task manager container */
+  .task-manager-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  /* Header styling */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: GhostWhite;
+  }
+  
+  /* Live date display styling */
+  .live-date {
+    border: 2px solid navy; /* Border styling */
+    border-radius: 15px; /* Rounded rectangle border */
+    padding: 10px; /* Add padding for a cleaner look */
+  }
+  
+  /* Style for live date text */
+  .live-date h2 {
+    margin: 0; /* Remove default margin */
+    color: navy; /* Text color in navy */
+  }
+  
+  /* Small calendar UI styling */
+  
+    /* Style for small calendar UI */
+
+  
+  /* Main content styling */
+  .task-manager-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  /* Task buttons styling */
+  .task-buttons {
+    flex: 1;
+    padding: 10px;
+    background-color: OliveDrab;
+  }
+  
+  /* Individual task button styling */
+  .task-buttons button {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Task display section styling */
+  .task-display-section {
+    flex: 2;
+    padding: 10px;
+  }
+  
+  /* Task display buttons styling */
+  .task-display-buttons {
+    margin-bottom: 20px; /* Increased margin for more spacing */
+  }
+  
+  /* Individual task display button styling */
+  .task-display-buttons button {
+    margin-right: 25px;
+  }
+  
+  /* Task displays container styling */
+  .task-displays {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual task card styling */
+  .task-card {
+    flex: 0 0 calc(33.33% - 10px);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 9px;
+    border: 2px solid navy;
+    background-color: White; /* Adjust background colour as needed */
+  }
+  
+  /* Individual task box styling */
+  .task-box {
+    display: block;
+  }
+  
+  /* Styling for task title */
+  .task-title {
+    font-weight: bold;
+    color: Navy;
+  }
+  
+  /* Styling for task date */
+  .task-date {
+    color: LightSlateGrey;
+  }
+  
+  /* Styling for task due time */
+  .task-time {
+    color: LightSlateGrey;
+    font-size: 17px;
+  }
+  
+  /* Default styles for selected display */
+  .selected-display {
+    display: none;
+  }
+  
+  /* Show selected display based on the selected button */
+  .selected .selected-display {
+    display: block;
+  }
+  
+  /* Header styling for the selected display Header*/
+  .selected-header {
+    margin-bottom: 10px; /* Spacing between header and content */
+    color: navy; /* Text color in navy */
+  }
+  
+  /* Styles for different display options */
+  .upcoming-tasks {
+    background-color: GhostWhite;
+  }
+  
+  .in-progress-tasks {
+    background-color: GhostWhite;
+  }
+  
+  .completed-tasks {
+    background-color: GhostWhite;
+  }
+  
+  .all-events {
+    background-color: GhostWhite;
+  }
